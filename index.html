@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 
 <head>
   <title>
-    aframe-yoman
+    headAR
   </title>
   <meta name="description" content="aframe SU demo">
-  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-  <!-- aframe extras -->
-  <!-- <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script> -->
-  <!-- webcomponentsjs -->
-  <!-- <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.24/webcomponents-lite.min.js"></script> -->
-  <!-- LRNWebComponents -->
-  <!-- <link href="https://cdn.rawgit.com/LRNWebComponents/build/0.2.0/build/default/build.html" rel="import" /> -->
-  <!-- include ar.js for A-Frame -->
-  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
-<body>
-  <a-scene embedded arjs>
-    <a-entity scale=".2 .2 .2">
-      <a-entity gltf-model="assets/NeilArmstrong.glb" scale="-1 1 1" rotation="0 90 0" position="0 0 0">
-        <a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation>
-      <!--<a-entity gltf-model="assets/animatedbox.gltf"></a-entity>
-      <a-sky color="#ECECEC"></a-sky>-->
-    </a-entity>
-    <a-marker-camera preset='hiro'></a-marker-camera>
-  </a-scene>
-  <script src="app.js"></script>
-</body>
+<style>
+  body {
+    background-color: #fff;
+  }
+</style>
+
+<model-viewer bounds="tight" src="assets/adamHead0.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="spruit_sunrise_1k_HDR.hdr" poster="poster.webp" shadow-intensity="1.6" exposure="1.33" shadow-softness="0.64" auto-rotate>
+  <button class="Hotspot" slot="hotspot-1" data-position="0.24150248220748916m 1.3176706772868703m -1.4109750628526334m" data-normal="0.4390135530102218m 0.10322938265955581m -0.8925305568041176m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Forehead</div>
+  </button><button class="Hotspot" slot="hotspot-2" data-position="1.146288052862782m -1.0671065584560666m 0.39909221034275544m" data-normal="0.4703199646735791m 0.879964426695855m -0.06679624674544817m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Shoulder</div>
+  </button><button class="Hotspot" slot="hotspot-3" data-position="0.03614804347232167m -1.2331310084368234m 1.1093501475814609m" data-normal="-9.335705452584442e-7m 0.12029696642456617m 0.992737951258123m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Back</div>
+  </button>
+  <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+  </div>
+  <button slot="ar-button" id="ar-button">
+      View in your space
+  </button>
+  <div id="ar-prompt">
+      <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+  </div>
+</model-viewer>
+
 
 </html>
+
