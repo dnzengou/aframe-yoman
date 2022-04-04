@@ -3,11 +3,16 @@
 
 <head>
   <title>
-    headAR
+    headAR - demo
   </title>
-  <meta name="description" content="aframe SU demo">
+  <meta name="description" content="aframe SU demo">s -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -15,6 +20,7 @@
     background-color: #fff;
   }
 </style>
+
 
 <model-viewer bounds="tight" src="assets/adamHead0.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="spruit_sunrise_1k_HDR.hdr" poster="poster.webp" shadow-intensity="1.6" exposure="1.33" shadow-softness="0.64" auto-rotate>
   <button class="Hotspot" slot="hotspot-1" data-position="0.24150248220748916m 1.3176706772868703m -1.4109750628526334m" data-normal="0.4390135530102218m 0.10322938265955581m -0.8925305568041176m" data-visibility-attribute="visible">
@@ -28,7 +34,7 @@
       <div class="update-bar"></div>
   </div>
   <button slot="ar-button" id="ar-button">
-      View in your space
+      
   </button>
   <div id="ar-prompt">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png">

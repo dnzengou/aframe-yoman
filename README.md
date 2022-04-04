@@ -1,8 +1,8 @@
 # aframe-yoman
 
 Demo
-[index0 > NeilArmstrong på mobil](assets/img/demoAR_NeilArmstrong_2.png)
-[index > adamHeadAR på mobil](assets/img/adamHeadAR.png]
+![index0 > NeilArmstrong på mobil](assets/img/demoAR_NeilArmstrong_2.png) <br>
+![index > adamHeadAR på mobil](assets/img/adamHeadAR.png)
 ***
 
 
