@@ -1,7 +1,7 @@
-# aframe-yoman
+# aframe-bedroom3d
 
 Demo
-![NeilArmstrong på mobil](assets/img/demoAR_NeilArmstrong_2.png)
+![aframe 3d bedroom model](assets/img/3dbedroom-ar.jpeg)
 
 ***
 
